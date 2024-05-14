@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Verify if the user is in root
-if [ "$id -u)" != "0" ]; then
+if [ "$(id -u)" != "0" ]; then
     echo "This script needs to be run as root"
     exit 1
 fi
